@@ -1,9 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import SearchMovies from './SearchMovies';
 
 class Main extends React.Component {
   render() {
-    return <h1>Hello there!</h1>;
+    return (
+      <div className='container'>
+        <h1 className='title'>Movie Search</h1>
+        <SearchMovies />
+      </div>
+    );
   }
 }
 

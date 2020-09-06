@@ -556,6 +556,10 @@ var _reactDom = __webpack_require__(5);
 
 var _reactDom2 = _interopRequireDefault(_reactDom);
 
+var _SearchMovies = __webpack_require__(17);
+
+var _SearchMovies2 = _interopRequireDefault(_SearchMovies);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -577,9 +581,14 @@ var Main = function (_React$Component) {
     key: 'render',
     value: function render() {
       return _react2.default.createElement(
-        'h1',
-        null,
-        'Hello there!'
+        'div',
+        { className: 'container' },
+        _react2.default.createElement(
+          'h1',
+          { className: 'title' },
+          'Movie Search'
+        ),
+        _react2.default.createElement(_SearchMovies2.default, null)
       );
     }
   }]);
@@ -29161,6 +29170,48 @@ if (process.env.NODE_ENV === 'production') {
 }
 
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
+
+/***/ }),
+/* 17 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _react = __webpack_require__(2);
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function SearchMovies() {
+  return _react2.default.createElement(
+    'form',
+    { className: 'form' },
+    _react2.default.createElement(
+      'label',
+      { htmlFor: 'query', className: 'Label' },
+      'Search'
+    ),
+    _react2.default.createElement('input', {
+      className: 'input',
+      type: 'text',
+      name: 'query',
+      placeholder: 'i.e. Harry Potter'
+    }),
+    _react2.default.createElement(
+      'button',
+      { className: 'button', type: 'submit' },
+      'Submit'
+    )
+  );
+}
+
+exports.default = SearchMovies;
 
 /***/ })
 /******/ ]);
