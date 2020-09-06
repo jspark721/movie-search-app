@@ -1,6 +1,6 @@
 # Movie Search App
 
-## simple react web application using the movie database API to search movies
+#### A simple react web application using the movie database API to search movies
 
 Quick start:
 
