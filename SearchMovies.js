@@ -1,8 +1,12 @@
 import React from 'react';
 
 function SearchMovies() {
+  const searchMovies = async (e) => {
+    e.preventDefault();
+    console.log('clicked!');
+  };
   return (
-    <form className='form'>
+    <form className='form' onSubmit={searchMovies}>
       <label htmlFor='query' className='Label'>
         Search
       </label>
