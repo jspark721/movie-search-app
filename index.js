@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import SearchMovies from './SearchMovies';
+import SearchMovies from './components/SearchMovies';
 
 class Main extends React.Component {
   render() {
