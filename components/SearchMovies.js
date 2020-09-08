@@ -25,7 +25,7 @@ function SearchMovies() {
   return (
     <>
       <form className='form' onSubmit={searchMovies}>
-        <label htmlFor='query' className='Label'>
+        <label htmlFor='query' className='label'>
           Search
         </label>
         <input
